@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #main-page {
+    background-image: url("\images\tingliu.jpg");
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  #button1 {
+    background-image: url("\images\tb1.png");
+    top: 30%;
+  }
+  
+  #button2 {
+    background-image: url("\images\tb2.png");
+    top: 40%;
+  }
+  
+  #button3 {
+    background-image: url("\images\tb3.png");
+    top: 50%;
+  }
+  
+  #button4 {
+    background-image: url("\images\tb4.png");
+    top: 60%;
+  }
+  
+  #button5 {
+    background-image: url("\images\tb5.png");
+    top: 70%;
+  }
+  
+  #transition-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  #transition-page.show {
+    opacity: 1;
+  }
+  
+  #transition-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  #detail-page {
+    display: none;
+    height: 100%;
+    background-color: #000;
+  }
+  
+  #timeline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  #timeline img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  #end-page {
+    display: none;
+    height: 100%;
+    background-image: url("\images\end.jpg");
+    background-size: cover;
+  }
+  
+  #final-page {
+    display: none;
+    height: 100%;
+    background-image: url("\images\trueend.jpg");
+    background-size: cover;
+  }
+  
+  #return-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url("\images\jieshu.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
